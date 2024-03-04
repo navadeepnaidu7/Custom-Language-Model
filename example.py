@@ -18,4 +18,4 @@ answer_end = outputs.end_logits.argmax() + 1
 answer = tokenizer.convert_tokens_to_string(tokenizer.convert_ids_to_tokens(inputs['input_ids'][0][answer_start:answer_end]))
 
 print(f"Question: {question}")
-print(f"Answer: {answer}")
+print(f"Answer: {answer}") 
